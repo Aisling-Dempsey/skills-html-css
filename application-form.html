@@ -2,34 +2,42 @@
 <html>
 <head>
     <title>Skills-HTML-CSS</title>
+    <link rel="stylesheet" href="styles.css"
 </head>
 <body>
 <!-- your html goes here -->
-<h1>Job Application</h1>
-<p>Please fill out the information and press submit</p>
+<div id="instructions">
+    <h1>Job Application</h1>
+    <p>Please fill out the information and press submit</p>
+</div>
 <form action="/application" method="POST"></form>
     <!--first name input box-->
     <label>First Name:
-        <input type="text" name="firstname">
+        <input  type="text" name="firstname">
     </label>
+    <br>
     <!--last name input box-->
     <label>Last Name:
-        <input type="text" name="lastname">
+        <input id="last-name" type="text" name="lastname">
     </label>
+    <br>
     <!--required salary input box-->
     <label>Salary:
         <input type="number" name="salary">
     </label>
+    <br>
     <!--Desired position dropdown-->
     <label>Desired Position:
-        <select name="position">
+        <select class="input" name="position">
             <label><option value="software-engineer">Software Engineer</option></label>
             <label><option value="qa-engineer">QA Engineer</option></label>
             <label><option value="product-manager">Product Manager</option></label>
         </select>
-        <label>
-            <input type="submit"
         </label>
+        <br>
+    <label>
+        <input id="submit" type="submit">
     </label>
+
 </body>
 </html>
